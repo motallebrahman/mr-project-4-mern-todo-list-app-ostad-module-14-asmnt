@@ -1,0 +1,29 @@
+{
+  "name": "mr-project-4-mern-todo-list-app-ostad-module-14-asmnt",
+  "version": "1.0.0",
+  "description": "In this assignment, you have to create a to-do list project using express.js (only backend)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motallebrahman/mr-project-4-mern-todo-list-app-ostad-module-14-asmnt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motallebrahman/mr-project-4-mern-todo-list-app-ostad-module-14-asmnt/issues"
+  },
+  "homepage": "https://github.com/motallebrahman/mr-project-4-mern-todo-list-app-ostad-module-14-asmnt#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "hpp": "^0.2.3",
+    "mongoose": "^8.2.1"
+  }
+}
