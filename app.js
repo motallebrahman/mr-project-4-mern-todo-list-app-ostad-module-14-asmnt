@@ -29,10 +29,10 @@ app.use(limiter);
 
 //MongoDB Connection
 
-let URL = "mongodb+srv://motallebrahman:153153@cluster0.flkevem.mongodb.net/ToDo"
+let mongoURL = "mongodb+srv://motallebrahman:153153@cluster0.flkevem.mongodb.net/ToDo"
 let OPTION = {autoIndex:true}
 
-mongoose.connect(URL,OPTION).then((res) => {
+mongoose.connect(mongoURL,OPTION).then((res) => {
   console.log("MongoDB Connected")
   }).catch((err) => {
     console.log(err)
