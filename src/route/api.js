@@ -6,6 +6,7 @@ const router=express.Router();
 router.post('/register', UserController.registration);
 router.post('/login', UserController.login);
 router.get('/profileDetails', Authentication, UserController.profileDetails);
+router.post('/profileUpdate/', Authentication, UserController.profileUpdate);
   
   
 

@@ -33,9 +33,23 @@ export const registration = async(req, res)=>  {
   export const profileDetails = async(req, res)=> {
     try {
       let email = req.headers['email'];
-      let loginData = await UserModel.find({email:email});
-      return response.json({status: "success", message: loginData}); 
+      let result = await UserModel.find({email:email});
+      return res.json({status: "success", data:result}); 
     } catch (error) {
       return res.json({ status: "failed", message: error });
     }
   }
+
+  export const profileUpdate = async(req, res)=> {
+  try {
+    const email = req.headers['email'];
+    const reqBody = req.body;
+
+    await UserModel.updateOne({email:email}, reqBody);
+
+    return res.json({ status: "success", message: "User Updated" })
+    
+  } catch (error) {
+    return res.json({ status: "failed", message: error});
+  }
+}
